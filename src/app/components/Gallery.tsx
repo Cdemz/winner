@@ -2,6 +2,7 @@
 import * as React from 'react';
 import ImageList from '@mui/material/ImageList';
 import ImageListItem from '@mui/material/ImageListItem';
+import Image from 'next/image';
 
 function srcset(image: string, size: number, rows = 1, cols = 1) {
   return {
@@ -31,10 +32,12 @@ export default function QuiltedImageList() {
             cols={item.cols || 1}
             rows={item.rows || 1}
           >
-            <img
+            <Image
               {...srcset(item.img, 121, item.rows, item.cols)}
               alt={item.title}
               loading="lazy"
+              width={300}
+              height={300}
             />
           </ImageListItem>
         ))}

@@ -56,7 +56,7 @@ const Services: FC = () => {
       <div className=" ">
         <div className="flex flex-wrap items-center justify-center gap-4 key={index}">
           {data.map((item, index) => (
-            <div className="w-full md:w-1/4 p-4 bg-white shadow text-[var(--color-text)] md:h-[31rem]">
+            <div key={index}  className="w-full md:w-1/4 p-4 bg-white shadow text-[var(--color-text)] md:h-[31rem]">
               <div className="h-[14rem]">
                 <Image
                   src={item.imageUrl}
