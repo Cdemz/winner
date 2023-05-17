@@ -1,8 +1,8 @@
-'use client';
-import * as React from 'react';
-import ImageList from '@mui/material/ImageList';
-import ImageListItem from '@mui/material/ImageListItem';
-import Image from 'next/image';
+"use client";
+import * as React from "react";
+import ImageList from "@mui/material/ImageList";
+import ImageListItem from "@mui/material/ImageListItem";
+import Image from "next/image";
 
 function srcset(image: string, size: number, rows = 1, cols = 1) {
   return {
@@ -38,6 +38,7 @@ export default function QuiltedImageList() {
               loading="lazy"
               width={300}
               height={300}
+              className="w-full h-full"
             />
           </ImageListItem>
         ))}
@@ -48,61 +49,61 @@ export default function QuiltedImageList() {
 
 const itemData = [
   {
-    img: '/images/img 1.png',
-    title: 'Breakfast',
+    img: "/images/img 1.png",
+    title: "Breakfast",
     rows: 2,
     cols: 2,
   },
   {
-    img: '/images/img-2.png',
-    title: 'Burger',
+    img: "/images/img-2.png",
+    title: "Burger",
   },
   {
-    img: '/images/img-3.png',
-    title: 'Camera',
+    img: "/images/iimg-3.png",
+    title: "Camera",
   },
   {
-    img: '/images/img7.png',
-    title: 'Coffee',
+    img: "/images/img7.png",
+    title: "Coffee",
     cols: 2,
   },
   {
-    img: '/images/img9.png',
-    title: 'Hats',
+    img: "/images/img9.png",
+    title: "Hats",
     cols: 2,
   },
   {
-    img: '/images/img11.png',
-    title: 'Honey',
-    author: '@arwinneil',
+    img: "/images/img11.png",
+    title: "Honey",
+    author: "@arwinneil",
     rows: 2,
     cols: 2,
   },
   {
-    img: '/images/img6.png',
-    title: 'Basketball',
+    img: "/images/img6.png",
+    title: "Basketball",
   },
   {
-    img: '/images/img8.png',
-    title: 'Fern',
+    img: "/images/img8.png",
+    title: "Fern",
   },
   {
-    img: '/images/img-6.png',
-    title: 'Mushrooms',
+    img: "/images/img-6.png",
+    title: "Mushrooms",
     rows: 2,
     cols: 2,
   },
   {
-    img: '/images/about-img.png',
-    title: 'Tomato basil',
+    img: "/images/about-img.png",
+    title: "Tomato basil",
   },
   {
-    img: '/images/img-5.png',
-    title: 'Sea star',
+    img: "/images/img-5.png",
+    title: "Sea star",
   },
   {
-    img: '/images/img-4.png',
-    title: 'Bike',
+    img: "/images/iimg-4.png",
+    title: "Bike",
     cols: 2,
   },
 ];

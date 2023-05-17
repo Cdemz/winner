@@ -1,16 +1,16 @@
-'use client';
-import Image from 'next/image';
-import React, { useState, ChangeEvent, FormEvent } from 'react';
-import { MdLocationPin } from 'react-icons/md';
-import { IoIosCall } from 'react-icons/io';
-import { HiMailOpen } from 'react-icons/hi';
-import { AiFillInstagram } from 'react-icons/ai';
+"use client";
+import Image from "next/image";
+import React, { useState, ChangeEvent, FormEvent } from "react";
+import { MdLocationPin } from "react-icons/md";
+import { IoIosCall } from "react-icons/io";
+import { HiMailOpen } from "react-icons/hi";
+import { AiFillInstagram } from "react-icons/ai";
 
 const FormPage = () => {
   const [formData, setFormData] = useState({
-    name: '',
-    email: '',
-    message: '',
+    name: "",
+    email: "",
+    message: "",
   });
 
   const handleChange = (
@@ -41,7 +41,7 @@ const FormPage = () => {
         />
       </div>
       {/* send us a message  */}
-      <div className="absolute top-0 bg-black bg-opacity-70 h-full w-full flex flex-col md:flex-row p-4 gap-8 md:px-[8rem]  py-[4rem]">
+      <div className="absolute top-0 bg-black bg-opacity-70 h-full w-full flex flex-col md:flex-row p-4 md:justify-between gap-8 md:px-[6rem]  py-[4rem]">
         <div className="md:w-1/2 flex flex-col gap-4">
           <div className="">
             <h1 className="text-2xl font-bold">CONTACT US</h1>
@@ -58,23 +58,23 @@ const FormPage = () => {
               <MdLocationPin
                 className="text-[var(--color-primary)]"
                 size={26}
-              />{' '}
+              />{" "}
               It would be updated
             </p>
             <p className="flex items-center gap-2">
-              <IoIosCall className="text-[var(--color-primary)]" size={26} />{' '}
-              +1-865-438-5984
+              <IoIosCall className="text-[var(--color-primary)]" size={26} />{" "}
+              +1-562-396-1488
             </p>
             <p className="flex items-center gap-2">
-              <HiMailOpen className="text-[var(--color-primary)]" size={26} />{' '}
-              rnstowingserivce@gmail.com
+              <HiMailOpen className="text-[var(--color-primary)]" size={26} />{" "}
+              josephkz9@gmail.com
             </p>
             <p className="flex items-center gap-2">
               <AiFillInstagram
                 className="text-[var(--color-primary)]"
                 size={26}
               />
-              rnstowingservice
+              topgtowing
             </p>
           </div>
         </div>

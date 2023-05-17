@@ -1,12 +1,12 @@
-'use client';
-import { useEffect } from 'react';
-import { FC } from 'react';
-import Image from 'next/image';
-import { MdAccessTimeFilled } from 'react-icons/md';
-import { HiOutlineOfficeBuilding } from 'react-icons/hi';
-import { FaCarCrash, FaUsers } from 'react-icons/fa';
-import AOS from 'aos';
-import 'aos/dist/aos.css';
+"use client";
+import { useEffect } from "react";
+import { FC } from "react";
+import Image from "next/image";
+import { MdAccessTimeFilled } from "react-icons/md";
+import { HiOutlineOfficeBuilding } from "react-icons/hi";
+import { FaCarCrash, FaUsers } from "react-icons/fa";
+import AOS from "aos";
+import "aos/dist/aos.css";
 
 const About: FC = () => {
   useEffect(() => {
@@ -16,7 +16,7 @@ const About: FC = () => {
   return (
     <div className=" font-prompt " id="about">
       {/* first box  */}
-      <div className="px-4 py-8 md:px-[8rem] md:py-10 flex md:flex-row justify-between bg-[var(--color-bg)] text-[var(--color-text)] flex-col">
+      <div className="px-4 py-8 md:px-[8rem] md:py-10 flex md:flex-row justify-between bg-[var(--color-bg)] text-[var(--color-text)] flex-col md:gap-6">
         <div className="">
           <Image
             src="/images/about-img.png"

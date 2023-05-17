@@ -1,16 +1,17 @@
-'use client';
-import { FC, useState } from 'react';
-import Link from 'next/link';
-import { CgMenuRight } from 'react-icons/cg';
+"use client";
+import { FC, useState } from "react";
+import Link from "next/link";
+import { CgMenuRight } from "react-icons/cg";
 import {
   RiCloseCircleFill,
   RiCustomerService2Fill,
   RiServiceFill,
-} from 'react-icons/ri';
-import { BsArrowRight } from 'react-icons/bs';
-import { HiHome } from 'react-icons/hi';
-import { GiTowTruck, GiCargoCrane } from 'react-icons/gi';
-import { MdOutlineLocalGroceryStore } from 'react-icons/md';
+} from "react-icons/ri";
+import { BsArrowRight } from "react-icons/bs";
+import { HiHome } from "react-icons/hi";
+import { GiTowTruck, GiCargoCrane } from "react-icons/gi";
+import { MdOutlineLocalGroceryStore } from "react-icons/md";
+import Image from "next/image";
 
 const NavBar: FC = ({}) => {
   const [nav, setNav] = useState(false);
@@ -20,9 +21,13 @@ const NavBar: FC = ({}) => {
   return (
     <div className="w-full bg-[var(--color-bg)] relative font-prompt ">
       <div className=" text-[var(--color-text)] flex py-4 items-center justify-between  w-[95%] mx-auto ">
-        <h1 className=" leading-5 text-[var(--color-primary)]  text-2xl font-extrabold font-luckiest ">
-          R&S <span className="block ">TOWING</span>
-        </h1>
+        <Image
+          src="/images/logo.png"
+          width={300}
+          height={300}
+          alt="logo "
+          className="w-[4rem] h-[4rem]"
+        />
         <nav>
           <ul className="md:flex gap-4 hidden cursor-pointer">
             <li>HOME</li>
@@ -47,8 +52,8 @@ const NavBar: FC = ({}) => {
       <div
         className={
           nav
-            ? 'md:hidden bg-[var(--color-text)] absolute p-6 items-center  left-[12.3rem] rounded-2xl ease-in-out duration-[1500ms] shadow-lg shadow-black z-40 '
-            : 'fixed left-[-100%] '
+            ? "md:hidden text-[var(--color-text)] bg-[var(--color-bg-variant)] absolute p-6 items-center  left-[12.3rem] rounded-2xl ease-in-out duration-[1500ms] shadow-lg shadow-black z-40 "
+            : "fixed left-[-100%] "
         }
       >
         <nav>
